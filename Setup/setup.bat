@@ -5,7 +5,7 @@ setlocal
 
 
 if "%UE_ROOT%" == "" (
-    echo "Plese set UE_ROOT. e.g set =C:\Program Files\Epic Games\UE_4.27"
+    echo "Plese set UE_ROOT. e.g set UE_ROOT=C:\Program Files\Epic Games\UE_4.27"
     exit /b 1
 )
 
