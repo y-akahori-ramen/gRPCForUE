@@ -1,17 +1,14 @@
 @echo off
-chcp 65001
 pushd %~dp0
 
 setlocal
 
 
 if "%UE_ROOT%" == "" (
-    echo "UE4のエンジンディレクトリを環境変数UE_ROOTに指定してください (例)set UE_ROOT=C:\Program Files\Epic Games\UE_4.27"
     exit /b 1
 )
 
 if "%CMAKE_GENERATOR%" == "" (
-    echo "CMAKEのジェネレータを環境変数CMAKE_GENERATOR指定してください (例)set CMAKE_GENERATOR=Visual Studio 17 2022"
     exit /b 1
 )
 

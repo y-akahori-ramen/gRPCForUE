@@ -1,5 +1,5 @@
 @echo off
-@REM UE4.27向けにVS2022でgRPC用プラグインを作成する例。UE_ROOT,CMAKE_GENERATORは環境に合わせて書き換える。
+@REM Example of creating a plugin for gRPC with VS2022 for UE4.27. UE_ROOT and CMAKE_GENERATOR are change  according to the environment.
 
 pushd %~dp0
 setlocal
