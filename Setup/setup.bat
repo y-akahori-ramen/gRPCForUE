@@ -1,8 +1,6 @@
 @echo off
 pushd %~dp0
 
-setlocal
-
 
 if "%UE_ROOT%" == "" (
     echo "Plese set UE_ROOT. e.g set UE_ROOT=C:\Program Files\Epic Games\UE_4.27"
