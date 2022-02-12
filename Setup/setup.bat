@@ -5,13 +5,16 @@ setlocal
 
 
 if "%UE_ROOT%" == "" (
+    echo "Plese set UE_ROOT. e.g set =C:\Program Files\Epic Games\UE_4.27"
     exit /b 1
 )
 
 if "%CMAKE_GENERATOR%" == "" (
+    echo "Plese set CMAKE_GENERATOR. e.g set CMAKE_GENERATOR=Visual Studio 17 2022"
     exit /b 1
 )
 
+setlocal
 set UE_THIRD_PARTY_DIR=%UE_ROOT%\Engine\Source\ThirdParty
 set GRPC_ROOT=%~dp0\grpcsrc
 set CMAKE_BUILD_DIR=%~dp0\grpcsrc\grpc\.build
