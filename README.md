@@ -21,10 +21,10 @@ Windowsのみ対応。
 コード取得
 ```
 git clone -b v1.41.1 https://github.com/y-akahori-ramen/gRPCForUE4
-cd gRPCForUE4
-git submodule update --init
 ```
 
+gRPCプラグインを準備するためにUEのルートディレクトリとCMakeで使用するジェネレーターを環境変数に設定してsetup.batを呼び出す。  
+バッチファイル内でgRPCのビルドを行い必要なファイルをプラグイン用のフォルダへコピーする。
 ```
 set UE_ROOT=YOUR_UNREAL_ENGINE_ROOT
 set CMAKE_GENERATOR=Visual Studio 17 2022
