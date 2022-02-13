@@ -25,7 +25,7 @@ git clone -b v1.41.1 https://github.com/y-akahori-ramen/gRPCForUE4
 
 ### setup.bat実行
 gRPCプラグインを準備するためにUEのルートディレクトリとCMakeで使用するジェネレーターを環境変数に設定して[setup.bat](./Setup/setup.bat)を呼び出す。  
-バッチファイル内でgRPCのビルドを行い必要なファイルをプラグイン用のフォルダへコピーする。
+バッチファイル内でgRPCのビルドを行い必要なファイルをプラグイン用のフォルダへコピーする。  
 UE4.27とVS2022で実行する例として [setupExampleVS2022UE427.bat](./Setup/setupExampleVS2022UE427.bat) がある。
 
 ## 参考
