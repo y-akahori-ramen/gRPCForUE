@@ -17,7 +17,6 @@ set UE_THIRD_PARTY_DIR=%UE_ROOT%\Engine\Source\ThirdParty
 set GRPC_ROOT=%~dp0\grpcsrc
 set CMAKE_BUILD_DIR=%~dp0\grpcsrc\grpc\.build
 set GRPC_BRANCH=v1.41.1
-set UE_ROOT=C:\Program Files\Epic Games\UE_4.27
 set THIRD_PARY_BUILD_DIR=%CMAKE_BUILD_DIR%\third_party
 set GRPC_PLUGIN_SRC_DIR=%~dp0\..\Source\gRPCForUE4\gRPC
 set GRPC_PLUGIN_INCLUDE_DIR=%GRPC_PLUGIN_SRC_DIR%\Includes
