@@ -1,33 +1,32 @@
-# gRPCForUE4
-UE4でgRPCを利用できるようにするためのプラグイン  
-SubmoduleとしてUnrealEngineのプロジェクトでプラグイン形式で組み込めることを想定している。    
-実例として[gRPCForUE4ExampleProject](https://github.com/y-akahori-ramen/gRPCForUE4ExampleProject)がある。
+# gRPCForUE
+gRPCForUE is plugin that to enable gRPC in UnrealEngine.
 
-## サポートしているgRPCVersion
-- v1.41.1
+Example of using this plugin
+- [gRPCForUE4ExampleProject](https://github.com/y-akahori-ramen/gRPCForUE4ExampleProject)
 
-## 必要環境
-Windowsのみ対応。
-
-さらに以下が使える状態であること。
+## Requirements
+- Windows
 - [Visual Stduio](https://visualstudio.microsoft.com/)
 - [Git](https://git-scm.com/)
 - [CMake](https://cmake.org/download/)
 - [nasm](https://www.nasm.us/)
 - [UnrealEngine](https://www.unrealengine.com/)
 
-## 環境準備
+## Setup plugin
+Build gRPC from source. and copy files to plugin.
 
-### コード取得
 ```
-git clone -b v1.41.1 https://github.com/y-akahori-ramen/gRPCForUE4
+git clone -b v1.41.1 https://github.com/y-akahori-ramen/gRPCForUE
+cd gRPCForUE
+set UE_ROOT=Path to your unreal engine root. e.g. C:\Program Files\Epic Games\UE_4.27
+set CMAKE_GENERATOR=Set your build system. e.g. Visual Studio 17 2022
+set GRPC_BRANCH=gRPC version. e.g. v1.41.1
+call ./Setup/setup.bat
 ```
 
-### setup.bat実行
-gRPCプラグインを準備するためにUEのルートディレクトリとCMakeで使用するジェネレーターを環境変数に設定して[setup.bat](./Setup/setup.bat)を呼び出す。  
-バッチファイル内でgRPCのビルドを行い必要なファイルをプラグイン用のフォルダへコピーする。  
-UE4.27とVS2022で実行する例として [setupExampleVS2022UE427.bat](./Setup/setupExampleVS2022UE427.bat) がある。
+Example
+- [setupExampleVS2022UE427.bat](./Setup/setupExampleVS2022UE427.bat)
 
-## 参考
+## References
 - https://qiita.com/mashira/items/bede3ad509f6f79cad19
 - https://github.com/vizor-games/InfraworldRuntime
