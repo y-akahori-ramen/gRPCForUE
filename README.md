@@ -16,7 +16,7 @@ Example of using this plugin
 Build gRPC from source. and copy files to plugin.
 
 ```
-git clone -b v1.41.1 https://github.com/y-akahori-ramen/gRPCForUE
+git clone https://github.com/y-akahori-ramen/gRPCForUE
 cd gRPCForUE
 set UE_ROOT=Path to your unreal engine root. e.g. C:\Program Files\Epic Games\UE_4.27
 set CMAKE_GENERATOR=Set your build system. e.g. Visual Studio 17 2022
